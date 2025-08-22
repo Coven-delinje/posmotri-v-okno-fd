@@ -71,8 +71,8 @@ ol {
 }
 
 .content__details {
-  max-width: 100%;
-  max-height: 100%;
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .title {
@@ -96,13 +96,13 @@ ol {
 
 .result__video-container {
   min-width: 711px;
-  margin-top: 78px;
+  padding-top: 78px;
   position: relative;
 }
 
 .result__video {
-  min-width: 386px;
-  width: 100%;
+  block-size: 386px;
+  inline-size: 100%;
   object-fit: cover;
 }
 
@@ -116,6 +116,10 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.content__list {
+  height: 399px;
 }
 
 .content__video-card-thumbnail {
