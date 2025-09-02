@@ -53,6 +53,16 @@ ol {
   background-color: #D9D9D9;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .page {
   display: flex;
   justify-content: center;
@@ -76,6 +86,15 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
+}
+
+.content__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-height: 298px;
+  overflow: auto;
+  position: relative;
 }
 
 .result__video {
@@ -266,7 +285,6 @@ ol {
   height: 298px;
   width: 399px;
   overflow: auto;
-  overflow-x: hidden;
 }
 
 .content__list-item:not(:last-child) {
